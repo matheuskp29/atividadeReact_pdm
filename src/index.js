@@ -8,11 +8,15 @@ const App = () => {
     const estiloElemento1 = () => {
         return {
             margin: 'auto', 
-            width: 768, 
+            width: 960, 
             backgroundColor: '#EEE', 
             padding: 12, 
             borderRadius: 10,
-            border: '1px solid'
+            border: '1px solid',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center'
         }
     }
 
@@ -34,7 +38,7 @@ const App = () => {
             <h1 style={{fontSize: 20, textAlign: 'center', fontWeight: 'bold'}}>
                 Profissionais de Saúde
             </h1>
-            <div style={{margin: 'auto', width: '90%', padding: 12, borderRadius: 10, border: 'groove', boxSizing: 'border-box', display: 'flex', justifyContent: 'space-around'}}>
+            <div className="container" style={{margin: 'auto', width: '100%', padding: 12, borderRadius: 10, border: 'groove', boxSizing: 'border-box', display: 'flex', justifyContent: 'space-around'}}>
                 <div className="cards">
                     <img src={medico} alt="José da Silva" />
                     <p>{medico1.nome}</p>
